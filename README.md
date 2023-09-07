@@ -18,38 +18,10 @@ Posting, browsing, and searching advertisements
 Contacting sellers through email
 Admin dashboard for managing users, advertisements, and categories
 
-# Installation
-1)Clone the repository:
-
-git clone https://github.com/ritwija05/OLX-JUIT.git
-
-
-2)Change into the project directory:
-
-
-cd OLX-JUIT
-
-
-3)Install the dependencies:
-
-
-npm install
-
-
-4)Create a Firebase project and set up the authentication and database.
-
-
-5)Update the Firebase configuration in the src/firebase.js file.
-
-
-6)Run the development server:
-npm start
-
-
 # Usage
 1)Navigate to the application in your web browser:
 
-http://localhost:3000/
+https://olx-juit.netlify.app/
 
 2)Register for a new account or log in to an existing account.
 
