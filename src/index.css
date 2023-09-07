@@ -1,0 +1,149 @@
+/* CSS to image */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+/* Container needed to position the button. Adjust the width as needed */
+
+.Imagecontainer {
+    position: relative;
+    width: 50%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+
+/* Make the image responsive */
+
+.Imagecontainer img {
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 15px !important;
+    border-radius: 30px/10px !important;
+    /* horizontal radius / vertical radius */
+}
+
+.Imagecontainer img:hover {
+    box-shadow: rgba(186, 73, 73, 0.35) 0px 5px 20px !important;
+}
+
+
+/* Style the button and place it in the middle of the container/image */
+
+.Imagecontainer .btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(51, 49, 49, 0.941);
+    color: white;
+    font-size: 40px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Imagecontainer .btn:hover {
+    background-color: black;
+}
+
+
+/* Making Card Link off */
+
+.category-link a {
+    text-decoration: none;
+    color: black;
+    height: normal;
+}
+
+.category-link a:hover {
+    color: #e84c3d;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* // image container for category */
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.category-item {
+    position: relative;
+    width: calc(50% - 1rem);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 30px/10px;
+}
+
+.category-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-item:hover img {
+    transform: scale(1.05);
+}
+
+.category-item .category-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(51, 49, 49, 0.941);
+    color: #fff;
+}
+
+.category-item .category-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.category-item .category-details p {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .category-item {
+        width: calc(33.33% - 1rem);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .category-item {
+        width: calc(25% - 1rem);
+    }
+}
+
+
+/* ======= */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
